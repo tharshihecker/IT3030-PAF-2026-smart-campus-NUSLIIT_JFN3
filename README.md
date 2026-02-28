@@ -1,19 +1,30 @@
-# IT3030-PAF-2026 Smart Campus Web System
+﻿# IT3030 Smart Campus Template
 
-This repository contains a monorepo structure for the Smart Campus Operations Hub assignment.
+Clean starter template for team collaboration.
 
-## Structure
-- `springboot-backend/` — Java Spring Boot REST API (Maven, Java 21)
-- `react-frontend/` — React web application (Node.js 22+)
+## Project Structure
+- `backend/` : Spring Boot REST API (Java 21, Maven)
+- `frontend/` : React web app (Node 22+)
 
-## Setup
-- Clone the repository
-- Backend: Open `springboot-backend` and run with Maven
-- Frontend: Open `react-frontend` and run with npm
+## Quick Start
 
-## Contribution
-- Use feature branches for individual work (e.g., `tharshi`)
-- See assignment instructions for module allocation
+### Backend
+```bash
+cd backend
+mvn spring-boot:run
+```
+Runs on `http://localhost:8080`.
 
-## Assignment Details
-Refer to the assignment PDF and this README for requirements, architecture, and contribution guidelines.
+Health check: `GET http://localhost:8080/api/v1/health`
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+Runs on `http://localhost:3000`.
+
+## Team Workflow
+- Keep `main` as stable template.
+- Create personal branches from `main` and implement assigned modules.

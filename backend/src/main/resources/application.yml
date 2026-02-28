@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: smartcampus-backend
+server:
+  port: 8080

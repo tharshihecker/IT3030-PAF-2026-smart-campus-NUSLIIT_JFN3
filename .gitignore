@@ -1,8 +1,8 @@
-# Node
-react-frontend/node_modules/
+﻿# Node
+frontend/node_modules/
 
 # Java
-springboot-backend/target/
+backend/target/
 
 # IDE
 .vscode/
@@ -13,5 +13,5 @@ springboot-backend/target/
 .DS_Store
 Thumbs.db
 
-# Misc
+# Environment
 .env

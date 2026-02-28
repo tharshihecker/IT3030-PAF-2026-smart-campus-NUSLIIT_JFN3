@@ -1,0 +1,17 @@
+# Node
+react-frontend/node_modules/
+
+# Java
+springboot-backend/target/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+.env

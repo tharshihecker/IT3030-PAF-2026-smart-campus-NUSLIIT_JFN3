@@ -1,7 +1,7 @@
-﻿import { render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders home heading", () => {
+test("renders overview link on initial load", () => {
   render(<App />);
-  expect(screen.getByText(/home/i)).toBeInTheDocument();
+  expect(screen.getByText(/overview/i)).toBeInTheDocument();
 });

@@ -1,0 +1,176 @@
+.facility-shell {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.facility-shell h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.facility-subtitle {
+  margin: 8px 0 18px;
+  color: #334155;
+}
+
+.facility-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.facility-filter-grid input,
+.facility-filter-grid select,
+.facility-admin-form input,
+.facility-admin-form select,
+.facility-admin-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  background: #ffffff;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.facility-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  background: #ffffff;
+}
+
+.facility-head {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.facility-head h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.facility-status {
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-active {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.status-out_of_service {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.status-maintenance {
+  color: #854d0e;
+  background: #fef9c3;
+}
+
+.facility-meta {
+  margin-top: 14px;
+  display: grid;
+  gap: 6px;
+  color: #475569;
+}
+
+.facility-admin-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.facility-admin-form textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+}
+
+.facility-admin-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+}
+
+.facility-admin-actions button,
+.facility-inline-actions button {
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f766e, #0369a1);
+}
+
+.facility-admin-actions button.secondary {
+  background: #475569;
+}
+
+.facility-inline-actions button.danger {
+  background: #dc2626;
+}
+
+.facility-admin-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.facility-admin-item {
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.facility-admin-item h3 {
+  margin: 0 0 4px;
+}
+
+.facility-admin-item p {
+  margin: 2px 0;
+  color: #475569;
+}
+
+.facility-inline-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.state-text.success {
+  color: #166534;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .facility-shell {
+    padding: 16px;
+  }
+
+  .facility-admin-item {
+    flex-direction: column;
+  }
+}
